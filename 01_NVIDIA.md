@@ -19,8 +19,7 @@ If not taken directly to download link:
 Download links directly with ```wget```:
 
     wget --continue https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda_9.2.148_396.37_linux
-    wget --continue https://developer.nvidia.com/compute/cuda/9.2/Prod2/patches/1/cuda_9.2.148.1_linux
-
+l
 If the download gets interrupted, just re-run the command. ```--continue``` will resume where it left off.
 
 ## Stop X.

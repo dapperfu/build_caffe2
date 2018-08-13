@@ -46,4 +46,5 @@ If you know how to correct the issue, create a pull request with the fixes.
 
     wget https://github.com/jed-frey/build_caffe2/archive/master.zip
     unzip master.zip
+    cd build_caffe2-master/
     grep ^"    " 01_NVIDIA.md | sed -e "s/    //" > 01_NVIDIA.sh
