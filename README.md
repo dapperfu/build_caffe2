@@ -1,4 +1,4 @@
-**tl;dr**: [Step 1: Install Nvidia Drivers](01_Nvidia.md).
+**tl;dr**: [Step 1: Install NVIDIA Drivers](01_NVIDIA.md).
 
 # Build Caffe2 on Ubuntu 18.04
 
@@ -24,7 +24,7 @@ Ubuntu LTS releases have become popular for academic and industry projects. Way 
     - [Backed by Facebook](https://medium.com/@Synced/caffe2-merges-with-pytorch-a89c70ad9eb7).
     - [Overchoice](https://en.wikipedia.org/wiki/Overchoice) of frameworks, just picking one for now.
 
-# Issues
+# Hurdles
 
 [At the time of this writing, Aug 2018]
 
@@ -32,5 +32,18 @@ Ubuntu LTS releases have become popular for academic and industry projects. Way 
 - [Ubuntu 18.04's ```pybind11``` is version 2.0.1, latest is 2.2.3.](https://launchpad.net/ubuntu/+source/pybind11)
 
 
-
 ![](.img/cuda92.png)
+
+# Corrections & Issues
+
+The only real way to test this is a fresh install, so after a while it gets tedius. If you find something doesn't work, open an issue:
+
+https://github.com/jed-frey/build_caffe2/issues/new
+
+If you know how to correct the issue, create a pull request with the fixes.
+
+##
+
+    wget https://github.com/jed-frey/build_caffe2/archive/master.zip
+    unzip master.zip
+    grep ^"    " 01_NVIDIA.md | sed -e "s/    //" > 01_NVIDIA.sh
