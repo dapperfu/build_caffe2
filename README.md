@@ -28,9 +28,8 @@ Ubuntu LTS releases have become popular for academic and industry projects. Way 
 
 [At the time of this writing, Aug 2018]
 
-- Nvidia's CUDA Toolkit 9.2 only supports Ubuntu 17.10 & 16.04
+- Nvidia's CUDA Toolkit 9.2 only officially supports Ubuntu 17.10 & 16.04
 - [Ubuntu 18.04's ```pybind11``` is version 2.0.1, latest is 2.2.3.](https://launchpad.net/ubuntu/+source/pybind11)
-
 
 ![](.img/cuda92.png)
 
@@ -42,9 +41,8 @@ https://github.com/jed-frey/build_caffe2/issues/new
 
 If you know how to correct the issue, create a pull request with the fixes.
 
-##
+# Here be dragons
 
-    wget https://github.com/jed-frey/build_caffe2/archive/master.zip
-    unzip master.zip
-    cd build_caffe2-master/
-    grep ^"    " 01_NVIDIA.md | sed -e "s/    //" > 01_NVIDIA.sh
+One should **never** just blindly copy and paste oneliners from the internet into shells, especially root shells. It's why some people take issue with [PiHole](https://pi-hole.net/) and other projects' installation instructions.
+
+    
