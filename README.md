@@ -40,9 +40,3 @@ The only real way to test this is a fresh install, so after a while it gets tedi
 https://github.com/jed-frey/build_caffe2/issues/new
 
 If you know how to correct the issue, create a pull request with the fixes.
-
-# Here be dragons
-
-One should **never** just blindly copy and paste oneliners from the internet into shells, especially root shells. It's why some people take issue with [PiHole](https://pi-hole.net/) and other projects' installation instructions.
-
-    
