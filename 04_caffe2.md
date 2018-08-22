@@ -8,6 +8,7 @@
 	cd build
 
 	cmake -DCMAKE_BUILD_TYPE=RELEASE \
+	        -DUSE_NATIVE_ARCH=ON \
 		-DCMAKE_C_COMPILER=`which gcc-6` \
 		-DCMAKE_CXX_COMPILER=`which g++-6` \
 		-DPYTHON_EXECUTABLE=`which python3` \
