@@ -1,6 +1,6 @@
 **tl;dr**: [Step 1: Install NVIDIA Drivers](01_NVIDIA.md).
 
-# Build Caffe2 on Ubuntu 18.04
+# Build Caffe2 with CUDA 9.2 on Ubuntu 18.04
 
 **What**: [Caffe2: *A New Lightweight, Modular, and Scalable Deep Learning Framework*](https://caffe2.ai/)
 
