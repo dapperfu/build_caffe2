@@ -10,14 +10,14 @@ Install packages required for build:
 
 ```checkinstall``` isn't strictly required, but it generates a ```.deb``` making installation and removal easier.
 
-    git clone --branch v2.2.3 --depth 1 --recursive --recurse-submodules -j8 https://github.com/pybind/pybind11.git
+    git clone --recurse-submodules https://github.com/pybind/pybind11.git
     cd pybind11/
     mkdir build
     cd build
     cmake -DCMAKE_BUILD_TYPE=RELEASE \
 		-DCMAKE_CXX_COMPILER=`which g++-6` \
 		-DPYTHON_EXECUTABLE=`which python3` \
-		-DCMAKE_CXX_FLAGS="-I/usr/local/cuda-9.2/include -I/usr/local/cuda-9.2/include/crt" \
+		-DCMAKE_CXX_FLAGS="-I/usr/local/cuda/include -I/usr/local/cuda/include/crt" \
 		..
     checkinstall --install=no --default --pkgname=pybind11 --pkgversion=2.2.3 --pkgrelease=1 --pkglicense=BSD make -j8 install
 
