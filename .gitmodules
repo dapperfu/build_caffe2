@@ -1,3 +1,9 @@
 [submodule ".mk_inc"]
 	path = .mk_inc
 	url = https://github.com/jed-frey/make_sandwich.git
+[submodule "caffe"]
+	path = caffe
+	url = https://github.com/BVLC/caffe.git
+[submodule "pybind11"]
+	path = pybind11
+	url = https://github.com/pybind/pybind11.git
