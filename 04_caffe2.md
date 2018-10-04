@@ -104,6 +104,14 @@ Use GCC 6.
 
     sed --in-place=.bak "s/#define __CUDACC_VER__/\/\/ #define __CUDACC_VER__/" /usr/local/cuda-9.2/include/crt/common_functions.h
 
+###Error:
+
+> ```CUDA_cublas_device_LIBRARY-NOTFOUND```
+
+**Fix**:
+
+  ln -s /usr/local/cuda-10.0/targets/x86_64-linux/lib/libcublas_static.a /usr/local/cuda-10.0/targets/x86_64-linux/lib/libcublas_device.a
+
 # Issues
 
 If it *doesn't* work, open an issue: https://github.com/jed-frey/build_caffe2/issues/new
