@@ -30,5 +30,16 @@ git submodule foreach git submodule update --init --jobs=8
 ../bin/python3 setup.py install'''
       }
     }
+    stage('Pytorch') {
+      steps {
+        timestamps() {
+          sh '''# Build pytorch
+: Build pytorch
+cd pytorch
+../bin/python3 setup.py build'''
+        }
+
+      }
+    }
   }
 }
