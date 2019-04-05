@@ -9,13 +9,7 @@ pipeline {
     stage('Update Git Submodules') {
       steps {
         sh 'git submodule update --init --jobs=6'
-        sh 'git submodule foreach "git submodule update --init"'
-      }
-    }
-    stage('Build pybind11') {
-      steps {
-        sh ''
       }
     }
   }
-}c
+}
